@@ -1,0 +1,7 @@
+Why we use broadcast and accumlator variable shubham
+Apche spark uses shared variable.So copy of shared shubham
+variable goes on each node of the cluster when the shubham
+driver send a task to the executors on he cluster 
+so that it can be used for performing task.
+
+
