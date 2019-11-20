@@ -11,7 +11,7 @@ recordsRDD = sc.textFile("in/*")
 def filereader(records):
     total.add(1)
 
-totalRecordsRdd=recordsRDD.filter(filereader)
+totalRecordsRdd=recordsRDD.map(filereader)
 print(totalRecordsRdd.count())
 print("Total lines in each file: {}".format(total.value))
 
